@@ -18,4 +18,10 @@ SessionLocal = sessionmaker(bind=engine)
 
 
 def get_db():
-    return SessionLocal()
+    db = SessionLocal()
+    return db
+
+    # try:
+    #     yield db
+    # except:
+    #     db.close()
