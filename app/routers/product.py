@@ -72,6 +72,6 @@ def search_products(
     if max_price:
         products = products.filter(Product.price <= max_price)
 
-    # products = products.order_by(Product.price.asc()) sort uchun
+ # products = products.order_by(Product.price.asc()) sort uchun
 
     return products.all()

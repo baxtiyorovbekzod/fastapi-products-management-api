@@ -97,6 +97,6 @@ def delete_category(
     session.commit()
 
     return {
-        "message": "Category deleted successfully"
+         "message": "Category deleted successfully"
     }
     

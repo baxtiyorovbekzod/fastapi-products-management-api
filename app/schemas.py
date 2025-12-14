@@ -3,6 +3,7 @@ from typing import List, Annotated, Optional
 from pydantic import BaseModel, Field
 
 
+
 class CategoryReponse(BaseModel):
     category_id: int
     name: Annotated[str, Field(max_length=100)]

@@ -8,5 +8,6 @@ app = FastAPI()
 
 Base.metadata.create_all(engine)
 
+
 app.include_router(category.router, prefix='/api/categories')
 app.include_router(product.router, prefix='/api/products')
